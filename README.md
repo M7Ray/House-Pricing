@@ -15,9 +15,12 @@ The data set contains the following parameters:
 - INSIGHTS
 
     1- Impact of Living Space and Lot Size: Properties with larger sqft_living and sqft_lot generally exhibit higher prices, as expected. The relationship is especially           strong in premium locations, such as waterfront areas.
+  
     2- Renovations and Recent Updates: Houses with recent renovations or updates (reflected by yr_renovated, sqft_living15, and sqft_lot15) tend to have higher prices, 
        possibly due to improved structural and aesthetic conditions.
+  
     3- Location and Zip Code: Properties in certain zip codes show significant variations in price, emphasizing the importance of location in real estate pricing.
+  
     4- House Grade and Condition: Houses with higher grades and better conditions command higher prices, as these factors directly affect the perceived value and quality 
        of the home.
 

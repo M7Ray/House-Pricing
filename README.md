@@ -49,6 +49,7 @@ df.describe()
 ```       
 
 <img width="125" alt="types" src="https://github.com/user-attachments/assets/cc390372-9e91-42cc-92de-72ae1ee8b894">
+<img width="528" alt="describe" src="https://github.com/user-attachments/assets/6acecb73-b143-4a11-b6ec-b146933be249">
 
 
 Data Wrangling

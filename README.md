@@ -49,7 +49,7 @@ df.describe()
 ```       
 
 
-## Data Wrangling ##
+Data Wrangling
 
 ```ruby
 
@@ -71,7 +71,7 @@ print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull(
 
 ```
 
-## Exploratory Data Analysis ##
+Exploratory Data Analysis
 
 ```ruby
 #unique values:
@@ -96,7 +96,7 @@ df.corr()['price'].sort_values()
 
 ```
 
-## Model Development ##
+Model Development
 
 
 ```ruby
@@ -141,7 +141,7 @@ print("R^2 Score:", r_squared)
 
 ```
 
-## Model Evaluation ##
+Model Evaluation
 
 ```ruby
 

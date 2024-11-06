@@ -6,17 +6,17 @@
 
     The data set contains the following parameters:
   
-    Basic Information: id, date, price
+    * Basic Information: id, date, price
 
-    Property Characteristics: bedrooms, bathrooms, sqft_living, sqft_lot
+    * Property Characteristics: bedrooms, bathrooms, sqft_living, sqft_lot
 
-    Structural Details: floors, waterfront, view, condition, grade
+    * Structural Details: floors, waterfront, view, condition, grade
   
-    Location Information: zipcode, lat, long
+    * Location Information: zipcode, lat, long
   
-    Recent Living and Lot Size (2015): sqft_living15, sqft_lot15
+    * Recent Living and Lot Size (2015): sqft_living15, sqft_lot15
   
-    also: sqft_above, sqft_basement, yr_built, yr_renovated
+    * also: sqft_above, sqft_basement, yr_built, yr_renovated
 
 - INSIGHTS
 

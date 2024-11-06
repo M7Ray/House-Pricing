@@ -113,9 +113,9 @@ df.corr()['price'].sort_values()
 ```
 
 <img width="58" alt="floors" src="https://github.com/user-attachments/assets/c5114e2c-6d16-4dc8-9615-6602a3e107d8">
+<img width="136" alt="type2" src="https://github.com/user-attachments/assets/6e0fdc84-0e05-44ca-90d7-8d50fe42a7ce">
 <img width="522" alt="plot" src="https://github.com/user-attachments/assets/c4abb2c1-12a2-43ef-b5c9-87a5b8b3bb26">
 <img width="518" alt="plot2" src="https://github.com/user-attachments/assets/9dce24a5-6136-490c-b624-ea1a3dd0b66d">
-<img width="136" alt="type2" src="https://github.com/user-attachments/assets/6e0fdc84-0e05-44ca-90d7-8d50fe42a7ce">
 
 
 Model Development

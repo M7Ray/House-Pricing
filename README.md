@@ -64,6 +64,9 @@ print(df.describe())
 print("number of NaN values for the column bedrooms :", df['bedrooms'].isnull().sum())
 print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull().sum())
 
+###    output:
+## number of NaN values for the column bedrooms : 13
+## number of NaN values for the column bathrooms : 10
 
 #replace missing values:
 mean=df['bedrooms'].mean()
@@ -74,6 +77,9 @@ df['bathrooms'].replace(np.nan,mean, inplace=True)
 print("number of NaN values for the column bedrooms :", df['bedrooms'].isnull().sum())
 print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull().sum())
 
+###    output
+## number of NaN values for the column bedrooms : 0
+## number of NaN values for the column bathrooms : 0
 
 
 ```
@@ -106,6 +112,12 @@ df.corr()['price'].sort_values()
 
 ```
 
+<img width="58" alt="floors" src="https://github.com/user-attachments/assets/c5114e2c-6d16-4dc8-9615-6602a3e107d8">
+<img width="522" alt="plot" src="https://github.com/user-attachments/assets/c4abb2c1-12a2-43ef-b5c9-87a5b8b3bb26">
+<img width="518" alt="plot2" src="https://github.com/user-attachments/assets/9dce24a5-6136-490c-b624-ea1a3dd0b66d">
+<img width="136" alt="type2" src="https://github.com/user-attachments/assets/6e0fdc84-0e05-44ca-90d7-8d50fe42a7ce">
+
+
 Model Development
 
 
@@ -118,6 +130,7 @@ Y = df['price']
 lm = LinearRegression()
 lm.fit(X,Y)
 lm.score(X, Y)
+## output: 0.00046769430149007363
 
 #linear regression model to predict the 'price' using the feature 'sqft_living' and R^2
 X = df[['sqft_living']]
@@ -125,6 +138,7 @@ Y = df['price']
 lm = LinearRegression()
 lm.fit(X, Y)
 print(lm.score(X,Y))
+## output: 0.4928532179037931
 
 # linear regression model to predict the 'price' using the list of features, find R^2
 features =["floors", "waterfront","lat" ,"bedrooms" ,"sqft_basement" ,"view" ,"bathrooms","sqft_living15","sqft_above","grade","sqft_living"]
@@ -133,6 +147,7 @@ Y = df['price']
 lm.fit(Z, Y)
 r_squared = lm.score(Z, Y)
 print(lm.score(Z,Y))
+## output: 0.6576890354915759
 
 
 # creating list of tuples where the first element in the tuple contains the name of the estimator (scale, polynomial, model) and the
@@ -149,7 +164,7 @@ pipe = Pipeline(Input)
 pipe.fit(X, Y)
 r_squared = pipe.score(X, Y)
 print("R^2 Score:", r_squared)
-
+## output: R^2 Score: 0.7512051345272872
 
 
 ```
@@ -173,6 +188,8 @@ x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.15, random
 
 print("number of test samples:", x_test.shape[0])
 print("number of training samples:",x_train.shape[0])
+## output: number of test samples: 3242
+##         number of training samples: 18371
 
 # Fitting a Ridge regression object using the training data with parameter 0.1, find R^2 using test data
 from sklearn.linear_model import Ridge
@@ -182,6 +199,7 @@ RigeModel.fit(x_train, y_train)
 y_pred = RigeModel.predict(x_test)
 r_squared = r2_score(y_test, y_pred)
 print("R^2 Score:", r_squared)
+## output: R^2 Score: 0.647875916393907
 
 # second order polynomial transform on both the training data and testing data
 # fitting a Ridge regression object using the training data with parameter 0.1, find R^2
@@ -194,6 +212,7 @@ RidgeModel_poly.fit(x_train_poly, y_train)
 y_pred_poly = RidgeModel_poly.predict(x_test_poly)
 r_squared_poly = r2_score(y_test, y_pred_poly)
 print("R^2 Score:", r_squared_poly)
+## output: R^2 Score: 0.7002744263583341
 
 
 

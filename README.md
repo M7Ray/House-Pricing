@@ -4,7 +4,7 @@
 
     The main goal of this project, as a data analyst for a Real Estate Investment Trust (REIT) looking to enter the residential real estate market, is to ascertain the         market value of houses based on a variety of property attributes. In this project, a dataset from that includes information on homes sold between May 2014 and May 2015     is analyzed. Key features are used to explore, analyze, and create predictive models for housing prices.
 
-The data set contains the following parameters:
+    The data set contains the following parameters:
     Basic Information: id, date, price
     Property Characteristics: bedrooms, bathrooms, sqft_living, sqft_lot
     Structural Details: floors, waterfront, view, condition, grade

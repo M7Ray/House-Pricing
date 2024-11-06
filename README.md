@@ -23,6 +23,9 @@ CONCLUSION
 
 The project illustrates how to analyze and comprehend different property features in order to create a predictive model for house values. The findings give the Real Estate Investment Trust important information on the factors that have the most effects on home values. The REIT can use these results to guide its investment choices, concentrating on properties with attributes that greatly raise their market worth.
 
+The dataset used in this project is available on Kaggle and can be accessed [here](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction/code)
+
+
 ```python
 
 import pandas as pd

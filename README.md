@@ -1,6 +1,7 @@
 # House-Pricing
 
 PROJECT OVERVIEW
+
 The main goal of this project, as a data analyst for a Real Estate Investment Trust (REIT) looking to enter the residential real estate market, is to ascertain the market value of houses based on a variety of property attributes. In this project, a dataset from that includes information on homes sold between May 2014 and May 2015 is analyzed. Key features are used to explore, analyze, and create predictive models for housing prices.
 
 The data set contains the following parameters:
@@ -12,12 +13,14 @@ Recent Living and Lot Size (2015): sqft_living15, sqft_lot15
 also: sqft_above, sqft_basement, yr_built, yr_renovated
 
 INSIGHTS
+
 - Impact of Living Space and Lot Size: Properties with larger sqft_living and sqft_lot generally exhibit higher prices, as expected. The relationship is especially strong in premium locations, such as waterfront areas.
 - Renovations and Recent Updates: Houses with recent renovations or updates (reflected by yr_renovated, sqft_living15, and sqft_lot15) tend to have higher prices, possibly due to improved structural and aesthetic conditions.
 - Location and Zip Code: Properties in certain zip codes show significant variations in price, emphasizing the importance of location in real estate pricing.
 - House Grade and Condition: Houses with higher grades and better conditions command higher prices, as these factors directly affect the perceived value and quality of the home.
 
 CONCLUSION
+
 The project illustrates how to analyze and comprehend different property features in order to create a predictive model for house values. The findings give the Real Estate Investment Trust important information on the factors that have the most effects on home values. The REIT can use these results to guide its investment choices, concentrating on properties with attributes that greatly raise their market worth.
 
 ```python

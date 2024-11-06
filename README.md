@@ -40,6 +40,9 @@ df = pd.read_csv(file_name)
 df.head()
 print(df.dtypes)
 
+<img width="125" alt="types" src="https://github.com/user-attachments/assets/cc390372-9e91-42cc-92de-72ae1ee8b894">
+
+
 # Statistical summary
 df.describe()
 

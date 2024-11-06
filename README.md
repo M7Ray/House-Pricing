@@ -1,8 +1,11 @@
 # House-Pricing
 
 Using online jupyter notebook
-```ruby
 
+<details>
+  <summary>Click to expand the code!</summary>
+
+```python
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -43,6 +46,8 @@ print(df.dtypes)
 # Statistical summary
 df.describe()
 
+</details>
+
 ```       
 
 
@@ -75,7 +80,10 @@ print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull(
 
 Exploratory Data Analysis
 
-```ruby
+<details>
+  <summary>Click to expand the code!</summary>
+
+```python
 #unique values:
 df['floors'].value_counts().to_frame()
 
@@ -96,12 +104,16 @@ plt.show()
 #find the feature other than price that is most correlated with price.
 df.corr()['price'].sort_values()
 
+</details>
+
 ```
 
 Model Development
 
+<details>
+  <summary>Click to expand the code!</summary>
 
-```ruby
+```python
 
 # linear regression model and R^2
 X = df[['long']]
@@ -141,11 +153,16 @@ pipe.fit(X, Y)
 r_squared = pipe.score(X, Y)
 print("R^2 Score:", r_squared)
 
+</details>
+
 ```
 
 Model Evaluation
 
-```ruby
+<details>
+  <summary>Click to expand the code!</summary>
+
+```python
 
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
@@ -181,6 +198,8 @@ RidgeModel_poly.fit(x_train_poly, y_train)
 y_pred_poly = RidgeModel_poly.predict(x_test_poly)
 r_squared_poly = r2_score(y_test, y_pred_poly)
 print("R^2 Score:", r_squared_poly)
+
+</details>
 
 ```
 

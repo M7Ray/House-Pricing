@@ -2,8 +2,6 @@
 
 Using online jupyter notebook
 
-<details>
-  <summary>Click to expand the code!</summary>
 
 ```python
 
@@ -42,20 +40,17 @@ df = pd.read_csv(file_name)
 df.head()
 print(df.dtypes)
 
-<img width="125" alt="types" src="https://github.com/user-attachments/assets/cc390372-9e91-42cc-92de-72ae1ee8b894">
-
 # Statistical summary
 df.describe()
 
-</details>
+
 
 ```       
 
 
 Data Wrangling
 
-<details>
-  <summary>Click to expand the code!</summary>
+
     
 ```python
 
@@ -75,14 +70,12 @@ df['bathrooms'].replace(np.nan,mean, inplace=True)
 print("number of NaN values for the column bedrooms :", df['bedrooms'].isnull().sum())
 print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull().sum())
 
-</details>
+
 
 ```
 
 Exploratory Data Analysis
 
-<details>
-  <summary>Click to expand the code!</summary>
 
 ```python
 #unique values:
@@ -105,14 +98,13 @@ plt.show()
 #find the feature other than price that is most correlated with price.
 df.corr()['price'].sort_values()
 
-</details>
+
 
 ```
 
 Model Development
 
-<details>
-  <summary>Click to expand the code!</summary>
+
 
 ```python
 
@@ -154,14 +146,13 @@ pipe.fit(X, Y)
 r_squared = pipe.score(X, Y)
 print("R^2 Score:", r_squared)
 
-</details>
+
 
 ```
 
 Model Evaluation
 
-<details>
-  <summary>Click to expand the code!</summary>
+
 
 ```python
 
@@ -200,7 +191,7 @@ y_pred_poly = RidgeModel_poly.predict(x_test_poly)
 r_squared_poly = r2_score(y_test, y_pred_poly)
 print("R^2 Score:", r_squared_poly)
 
-</details>
+
 
 ```
 

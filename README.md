@@ -13,11 +13,8 @@ from sklearn.preprocessing import StandardScaler,PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 %matplotlib inline
 
-##
+
 #importing dataset
-##
-
-
 import piplite
 await piplite.install('seaborn')
 

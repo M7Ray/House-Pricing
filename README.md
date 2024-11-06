@@ -48,9 +48,11 @@ df.describe()
 
 ```
 
-## Data Wrangling ##
-
-```ruby
+Markup : <details>
+           <summary>Data Wrangling</summary>
+           <p>
+           
+           ```ruby
 
 df.drop(columns=['id', 'Unnamed: 0'], inplace=True)
 print(df.describe())
@@ -69,6 +71,15 @@ print("number of NaN values for the column bedrooms :", df['bedrooms'].isnull().
 print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull().sum())
 
 ```
+           </p>
+         </details>
+
+
+
+
+## Data Wrangling ##
+
+
 
 ## Exploratory Data Analysis ##
 

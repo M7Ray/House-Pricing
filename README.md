@@ -48,7 +48,10 @@ df.describe()
 
 Data Wrangling
 
-```ruby
+<details>
+  <summary>Click to expand the code!</summary>
+    
+```python
 
 df.drop(columns=['id', 'Unnamed: 0'], inplace=True)
 print(df.describe())
@@ -65,6 +68,8 @@ df['bathrooms'].replace(np.nan,mean, inplace=True)
 #check again for number of missing values
 print("number of NaN values for the column bedrooms :", df['bedrooms'].isnull().sum())
 print("number of NaN values for the column bathrooms :", df['bathrooms'].isnull().sum())
+
+</details>
 
 ```
 
